@@ -1,13 +1,17 @@
-import './index.css'
+import "./index.css";
+import Header from "./components/atoms/Header";
+import TodoAdd from "./components/molecules/TodoAdd";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
-  )
+    <div className="bg-slate-100 min-h-screen">
+      <div className="w-[640px] mx-auto pt-4 px-2">
+        <Header className="mb-4 text-center">Tasks</Header>
+
+        <TodoAdd />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
